@@ -70,7 +70,8 @@ This guide assumes **zero prior knowledge**!
 
 ### Step 1: Open Terminal
 
-**[SCREENSHOT: Opening Terminal via Spotlight]**
+<img width="826" height="403" alt="image" src="https://github.com/user-attachments/assets/b505c46a-2c56-41c4-b803-884acb4e8868" />
+
 
 1. Press `Cmd + Space` (opens Spotlight)
 2. Type "terminal"
