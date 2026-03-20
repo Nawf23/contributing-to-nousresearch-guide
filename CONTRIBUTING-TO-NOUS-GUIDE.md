@@ -90,7 +90,8 @@ brew --version
 code --version
 ```
 
-**[SCREENSHOT: Terminal showing version checks]**
+<img width="697" height="142" alt="image" src="https://github.com/user-attachments/assets/7ad677c5-396a-4d38-900b-cd1e099aeeb8" />
+
 
 **Expected output:**
 - ✅ Git: Usually pre-installed on Mac
@@ -113,8 +114,6 @@ Run this command:
 2. Press Enter to confirm
 3. Wait 3-5 minutes for installation
 4. **Important:** At the end, it shows commands to add Homebrew to your PATH - **copy and run those exactly**
-
-**[SCREENSHOT: Homebrew installation success message with PATH commands]**
 
 They'll look like:
 ```bash
@@ -144,8 +143,6 @@ Wait 3-5 minutes. Then verify:
 python3.11 --version
 ```
 
-**[SCREENSHOT: Python 3.11 installation success]**
-
 ### Step 5: Install VSCode
 
 Download from: [https://code.visualstudio.com/](https://code.visualstudio.com/)
@@ -159,8 +156,6 @@ Download from: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 2. Press `Cmd + Shift + P`
 3. Type "shell command"
 4. Select "Shell Command: Install 'code' command in PATH"
-
-**[SCREENSHOT: VSCode shell command installation]**
 
 Verify:
 ```bash
@@ -186,7 +181,8 @@ git config --global user.email
 
 **Why?** GitHub no longer accepts passwords for git operations. You need a token.
 
-**[SCREENSHOT: GitHub Settings → Developer settings]**
+<img width="1170" height="555" alt="image" src="https://github.com/user-attachments/assets/af7d5461-3e84-44f4-bbe4-59bbebff963e" />
+
 
 1. Go to [github.com](https://github.com) and log in
 2. Click your profile picture → Settings
@@ -199,8 +195,6 @@ git config --global user.email
 9. Click Generate token
 10. **COPY THE TOKEN IMMEDIATELY** - you won't see it again!
 
-**[SCREENSHOT: Token generation page with 'repo' checked]**
-
 **Save it in:** Notes app, password manager, or secure document
 
 ### Step 8: Create Project Folder
@@ -212,8 +206,6 @@ cd github-projects
 pwd
 ```
 
-**[SCREENSHOT: Terminal showing project folder creation]**
-
 You should see: `/Users/yourname/github-projects`
 
 ---
@@ -224,7 +216,6 @@ You should see: `/Users/yourname/github-projects`
 
 **What is WSL?** It lets you run Linux on Windows - essential for development.
 
-**[SCREENSHOT: PowerShell as Administrator]**
 
 1. Click Start
 2. Type "PowerShell"
@@ -239,7 +230,6 @@ wsl --install
 6. After restart, Ubuntu will open automatically
 7. Create a username and password (remember these!)
 
-**[SCREENSHOT: Ubuntu setup username/password]**
 
 Verify:
 ```bash
@@ -267,7 +257,6 @@ git --version
 python3 --version
 ```
 
-**[SCREENSHOT: Version checks in Ubuntu terminal]**
 
 ### Step 3: Install VSCode
 
@@ -276,8 +265,6 @@ Download from: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 1. Download "Windows" version
 2. Install normally
 3. **Important:** Install the **WSL extension** in VSCode
-
-**[SCREENSHOT: VSCode WSL extension installation]**
 
 To open projects from WSL:
 ```bash
@@ -297,8 +284,6 @@ git config --global user.email "your-email@example.com"
 
 **Follow the same steps as Mac (Step 7 above)**
 
-**[SCREENSHOT: Same as Mac - token generation]**
-
 ### Step 6: Create Project Folder
 
 In Ubuntu terminal:
@@ -310,8 +295,6 @@ cd github-projects
 pwd
 ```
 
-**[SCREENSHOT: WSL terminal showing project folder]**
-
 ---
 
 ## Making Your First Contribution
@@ -320,7 +303,8 @@ pwd
 
 ### Step 1: Fork the Repository
 
-**[SCREENSHOT: GitHub fork button on NousResearch/atropos]**
+![IMG_9866](https://github.com/user-attachments/assets/80301947-2d5d-4a0e-b68b-2853c1f592bd)
+
 
 1. Go to: [https://github.com/NousResearch/atropos](https://github.com/NousResearch/atropos)
 2. Click **Fork** button (top right)
@@ -335,8 +319,6 @@ cd ~/github-projects
 git clone https://github.com/YourUsername/atropos.git
 cd atropos
 ```
-
-**[SCREENSHOT: Terminal showing successful clone]**
 
 Replace `YourUsername` with your actual GitHub username.
 
@@ -358,8 +340,6 @@ source .venv/bin/activate
 
 **You should see `(.venv)` appear in your prompt!**
 
-**[SCREENSHOT: Terminal with (.venv) prefix]**
-
 ### Step 4: Install Dependencies
 
 **⚠️ WARNING: This takes 15-30 minutes!**
@@ -375,9 +355,6 @@ pip install -e ".[dev]"
 - You'll see lots of text scrolling - don't panic!
 - **On Mac M1/M2/M3:** Some packages need to compile for ARM - this is why it's slow
 
-**[SCREENSHOT: Installation in progress showing "Building wheel"]**
-
-**[SCREENSHOT: Successful installation completion]**
 
 ### Step 5: Install Pre-commit Hooks
 
@@ -392,8 +369,6 @@ pre-commit install
 ```bash
 pytest
 ```
-
-**[SCREENSHOT: Tests passing - showing "138 passed, 50 skipped"]**
 
 If you see tests passing - **congratulations, your setup is complete!** 🎉
 
@@ -412,16 +387,12 @@ Example branch names:
 - `docs/add-windows-setup-guide`
 - `docs/clarify-python-requirements`
 
-**[SCREENSHOT: Terminal showing branch creation]**
-
 ### Step 8: Make Your Changes
 
 Open VSCode:
 ```bash
 code .
 ```
-
-**[SCREENSHOT: VSCode with atropos project open]**
 
 **Good first contributions:**
 - Fix typos in `README.md` or `CONTRIBUTING.md`
@@ -430,8 +401,6 @@ code .
 - Clarify setup instructions
 
 **Example edit:**
-
-**[SCREENSHOT: VSCode showing CONTRIBUTING.md being edited]**
 
 Press `Cmd + S` (Mac) or `Ctrl + S` (Windows) to save.
 
@@ -458,8 +427,6 @@ git commit -m "docs: fix typo in installation instructions"
 - ❌ `changes`
 - ❌ `fixed things`
 
-**[SCREENSHOT: Terminal showing successful commit with pre-commit checks passing]**
-
 ### Step 10: Push to GitHub
 
 ```bash
@@ -470,19 +437,14 @@ git push origin docs/your-contribution-name
 - Username: Your GitHub username
 - Password: **Paste your Personal Access Token** (NOT your GitHub password!)
 
-**[SCREENSHOT: Successful push to GitHub]**
 
 ### Step 11: Create Pull Request
-
-**[SCREENSHOT: GitHub yellow banner "Compare & pull request"]**
 
 1. Go to: [https://github.com/NousResearch/atropos](https://github.com/NousResearch/atropos)
 2. You'll see a yellow banner: "Compare & pull request"
 3. Click it
 
 **Fill out the PR template:**
-
-**[SCREENSHOT: PR template filled out]**
 
 **Title:**
 ```
@@ -520,8 +482,6 @@ docs: add Python 3.10+ requirement note for Mac users
 ```
 
 Click **Create pull request**
-
-**[SCREENSHOT: Submitted PR page showing PR #XXX]**
 
 ---
 
@@ -607,38 +567,11 @@ sudo apt clean
 
 ---
 
-## Next Steps
-
 ### After Your First PR
 
 1. **Wait for review** - maintainers will respond (usually within a few days)
 2. **Address feedback** if requested
-3. **Celebrate when it's merged!** 🎉
-
-### Continue Contributing
-
-**Find more issues to work on:**
-1. Go to: [https://github.com/NousResearch/atropos/issues](https://github.com/NousResearch/atropos/issues)
-2. Look for labels: `good first issue`, `documentation`, `help wanted`
-3. Comment: "I'd like to work on this!"
-4. Wait for maintainer approval
-5. Follow the same workflow
-
-### Level Up Your Skills
-
-**Resources:**
-- [GitHub Skills](https://skills.github.com/) - Interactive tutorials
-- [Git Documentation](https://git-scm.com/book/en/v2) - Deep dive into Git
-- [Python Official Tutorial](https://docs.python.org/3/tutorial/) - Learn Python
-
-**Practice projects:**
-- Contribute to other repos
-- Build your own projects
-- Join open-source communities on Discord/Slack
-
----
-
-## Quick Reference Commands
+3. **Celebrate when it's merged!** 
 
 ### Mac/Linux Terminal Basics
 ```bash
@@ -652,99 +585,13 @@ code .                 # Open VSCode
 clear                  # Clean screen
 ```
 
-### Git Workflow
-```bash
-# Start new contribution
-git checkout main
-git pull origin main
-git checkout -b docs/my-feature
-
-# Save work
-git status
-git add .
-git commit -m "docs: clear message"
-git push origin docs/my-feature
-
-# Update from main repo
-git fetch upstream
-git merge upstream/main
-```
-
-### Python Virtual Environment
-```bash
-# Create (once per project)
-python3.11 -m venv .venv
-
-# Activate (every time you work)
-source .venv/bin/activate
-
-# Deactivate (when done)
-deactivate
-
-# Check if active
-which python  # Should show .venv path
-```
-
----
-
-## Acknowledgments
-
-Huge thanks to:
-- **NousResearch** for maintaining an open, welcoming project
-- **The open-source community** for excellent documentation
-- **Claude.ai** for helping me learn and debug along the way
-
----
-
 ## Connect With Me
 
 - **GitHub:** [@Nawf23](https://github.com/Nawf23)
-- **Twitter/X:** [@yourhandle]
+- **Twitter/X:** [@victornawf2]
 
 Found this guide helpful? ⭐ Star this repo and share it with others!
 
 Have questions or suggestions? Open an issue or submit a PR!
 
 ---
-
-**Last updated:** March 2026  
-**License:** MIT
-
----
-
-## Appendix: Terminal Cheat Sheet
-
-### File Operations
-```bash
-cat file.txt           # View file contents
-nano file.txt          # Edit file (Ctrl+X to exit)
-rm file.txt            # Delete file (careful!)
-cp file.txt copy.txt   # Copy file
-mv old.txt new.txt     # Rename/move file
-```
-
-### Navigation Shortcuts
-```bash
-cd -                   # Go to previous directory
-cd ~/Desktop          # Go to Desktop
-ls -la                # List all files with details
-```
-
-### Keyboard Shortcuts (Terminal)
-- `Ctrl + C` - Stop current command
-- `Ctrl + L` - Clear screen (same as `clear`)
-- `↑` - Previous command
-- `Tab` - Auto-complete
-- `Cmd + K` (Mac) - Clear screen
-
-### Troubleshooting Commands
-```bash
-which python3          # Where is Python?
-echo $PATH             # What's in my PATH?
-env                    # Show environment variables
-history                # Show command history
-```
-
----
-
-**You've got this! Happy contributing! 🚀**
