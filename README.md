@@ -112,8 +112,6 @@ git push origin docs/your-contribution
 
 ---
 
-### Screenshots Gallery
-
 *(Coming soon - check back for visual step-by-step!)*
 
 ---
